@@ -1,5 +1,5 @@
 /*
-Reference: http://www.codeproject.com/Articles/20250/Reverse-Connection-Shell
+@404death
 */
 
 using System;
