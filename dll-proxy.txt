@@ -1,0 +1,2 @@
+https://github.com/Sh0ckFR/DLLirant
+https://github.com/Flangvik/SharpDllProxy
