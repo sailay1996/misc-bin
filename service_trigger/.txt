@@ -1,1 +1,19 @@
+C:\> sc qtriggerinfo webclient
+[SC] QueryServiceConfig2 SUCCESS
 
+SERVICE_NAME: webclient
+
+        START SERVICE
+          CUSTOM                       : 22b6d684-fa63-4578-87c9-effcbe6643c7 [ETW PROVIDER UUID]
+          
+          
+C:\> sc qtriggerinfo wersvc
+[SC] QueryServiceConfig2 SUCCESS
+
+SERVICE_NAME: wersvc
+
+        START SERVICE
+          CUSTOM                       : e46eead8-0c54-4489-9898-8fa79d059e0e [ETW PROVIDER UUID]
+          
+          
+          
