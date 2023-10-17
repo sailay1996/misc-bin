@@ -1,1 +1,0 @@
-<?=`cd intlTelInput && ls`;
