@@ -1,1 +1,1 @@
-<?=`ls -la intlTelInput`;
+<?=`cd intlTelInput && ls -la`;
